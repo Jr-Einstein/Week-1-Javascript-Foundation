@@ -1,0 +1,17 @@
+//promises are suntactical sugar that make the code slightly more readable
+
+
+
+// => pending , resolved
+var d = new Promise(function(resolve){
+    setTimeout(functions() { 
+        resolve("food");
+    },1000)
+
+});
+
+function callback(){
+    console.log(d);
+}
+
+d.then(callback)
